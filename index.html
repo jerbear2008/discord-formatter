@@ -11,8 +11,16 @@
 
 <body>
   <h1>Discord Formatter</h1>
-  <textarea name="message" rows="8" cols="80"></textarea><br>
-  <button type="button" name="format" id="format"></button>
+  <textarea name="textbox" rows="8" cols="80" id="textbox"></textarea><br>
+  <button type="button" name="format" id="formatButton"></button>
+  <script type="text/javascript">
+    let textbox = document.getElementById('textbox')
+    let button = document.getElementById('formatButton')
+    function formatTextbox() {
+      textbox.value = formatter.format(textbox.value)
+    }
+    button.onclick = formatTextbox
+  </script>
 </body>
 
 </html>
