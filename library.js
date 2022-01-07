@@ -40,7 +40,7 @@ let formatter = {
 
       output += '\n' + line
     })
-    return output
+    return output.trim()
   },
   formattingTemplates: {
     inline: {
