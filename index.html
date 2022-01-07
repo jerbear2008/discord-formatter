@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
   <script src="https://jerbear2008.github.io/discord-formatter/library.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/showdown/dist/showdown.min.js" charset="utf-8"></script>
   <title>Discord formatter</title>
 </head>
 
@@ -13,6 +14,7 @@
   <h1>Discord Formatter</h1>
   <textarea name="textbox" rows="8" cols="80" id="textbox"></textarea><br>
   <button type="button" name="format" id="formatButton">Format</button>
+  <div id="readme"></div>
   <script type="text/javascript">
     let textbox = document.getElementById('textbox')
     let button = document.getElementById('formatButton')
@@ -20,6 +22,13 @@
       textbox.value = formatter.format(textbox.value)
     }
     button.onclick = formatTextbox
+    async () => {
+      let readmeDiv = document.getElementById('readme')
+      let converter = new showdown.Converter()
+      let markdown = await fetch('https://jerbear2008.github.io/discord-formatter/README.md')
+      let html = converter.makeHTML(markdown)
+      readmeDiv.innerHTML = html
+    }()
   </script>
 </body>
 
