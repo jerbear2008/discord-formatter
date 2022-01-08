@@ -25,7 +25,7 @@
     let converter = new showdown.Converter()
     fetch('https://jerbear2008.github.io/discord-formatter/README.md').then(response => {
       let markdown = response.text()
-      let html = converter.makeHTML(markdown)
+      let html = converter.makeHtml(markdown)
       readmeDiv.innerHTML = html
     })
   </script>
