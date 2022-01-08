@@ -22,13 +22,13 @@
       textbox.value = formatter.format(textbox.value)
     }
     button.onclick = formatTextbox
-    async () => {
+    (async () => {
       let readmeDiv = document.getElementById('readme')
       let converter = new showdown.Converter()
       let markdown = await fetch('https://jerbear2008.github.io/discord-formatter/README.md')
       let html = converter.makeHTML(markdown)
       readmeDiv.innerHTML = html
-    }()
+    })()
   </script>
 </body>
 
