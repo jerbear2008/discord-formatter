@@ -18,7 +18,6 @@ let formatter = {
       let formattingCodes = formattingCode.split('')
       let formattedLine = line.substring(formattingCode.length + 1)
       for (var code in this.formattingTemplates.inline) { //check each inline format
-        console.log(code)
         let position = formattingCodes.indexOf(code)
         if (position === -1) continue
         formattingCodes.splice(position, 1)
