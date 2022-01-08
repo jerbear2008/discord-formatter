@@ -21,7 +21,7 @@ w    | Codeblock | White text
 k    | Codeblock | Black text
 I    | Codeblock | Italic in codeblock
 
-Inline formats are the formats built into Discord. You can use multiple at the same time. They are applied in the order they are specified, so use `c` first and `q` last.
+Inline formats are the formats built into Discord. You can use multiple at the same time.
 
 Codeblock formats use Discord's codeblocks with specific languages and symbols. This will make Discord highlight your message in a specific color. They cannot be combined with other formats.
 
