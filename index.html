@@ -21,10 +21,12 @@
     button.onclick = () => {
       textbox.value = formatter.format(textbox.value)
     }
-    let readmeDiv = document.getElementById('readme')
-    let converter = new showdown.Converter()
-    
+
     async function getReadme() {
+      let readmeDiv = document.getElementById('readme')
+      let converter = new showdown.Converter({
+        tables: true
+      })
       let response = await fetch('https://jerbear2008.github.io/discord-formatter/README.md')
       let markdown = await response.text()
       let html = converter.makeHtml(markdown)
