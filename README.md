@@ -4,7 +4,7 @@ Discord Formatter is a tool that helps you format your discord messages. You can
 The formatter works per-line. To format a line, prefix it with a format code. Format codes are a code from this list:
 
 Code | Type      | Format
-:---:|:---------:|:------
+:---:|:----------|:------
 `i`  | Inline    | italic
 `b`  | Inline    | bold
 `u`  | Inline    | underline
