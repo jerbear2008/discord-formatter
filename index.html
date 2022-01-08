@@ -23,12 +23,14 @@
     }
     let readmeDiv = document.getElementById('readme')
     let converter = new showdown.Converter()
-    (async () => {
+    
+    async function getReadme {
       let response = await fetch('https://jerbear2008.github.io/discord-formatter/README.md')
       let markdown = await response.text()
       let html = converter.makeHtml(markdown)
       readmeDiv.innerHTML = html
-    })()
+    }
+    getReadme()
   </script>
 </body>
 
