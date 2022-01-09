@@ -11,10 +11,10 @@
  */
 
 module.exports = class ExamplePlugin {
-    start() {
-      BdApi.alert('DiscordFormatter', 'started')
-    } 
-    stop() {
-      BdApi.alert('DiscordFormatter', 'stopped')
-    } 
+  start() {
+    BdApi.alert('DiscordFormatter', 'started')
+  }
+  stop() {
+    BdApi.alert('DiscordFormatter', 'stopped')
+  }
 }
