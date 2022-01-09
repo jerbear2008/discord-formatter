@@ -8,12 +8,13 @@
  * @website https://jerbear2008.github.io/discord-formatter
  * @source https://github.com/jerbear2008/discord-formatter
  * @updateUrl https://raw.githubusercontent.com/jerbear2008/discord-formatter/main/DiscordFormatter.plugin.js
- */ 
- 
- function start() {
-   BdApi.alert('DiscordFormatter', 'started')
- }
- 
- function stop() {
-   BdApi.alert('DiscordFormatter', 'stopped')
- }
+ */
+
+module.exports = class ExamplePlugin {
+    start() {
+      BdApi.alert('DiscordFormatter', 'started')
+    } 
+    stop() {
+      BdApi.alert('DiscordFormatter', 'stopped')
+    } 
+}
