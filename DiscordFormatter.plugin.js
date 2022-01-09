@@ -10,7 +10,7 @@
  * @updateUrl https://raw.githubusercontent.com/jerbear2008/discord-formatter/main/DiscordFormatter.plugin.js
  */
 
-module.exports = class ExamplePlugin {
+module.exports = class DiscordFormatter {
   start() {
     BdApi.alert('DiscordFormatter', 'started')
   }
