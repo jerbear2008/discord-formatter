@@ -7,4 +7,5 @@
  * @authorId 787042660724113408
  * @website https://jerbear2008.github.io/discord-formatter
  * @source https://github.com/jerbear2008/discord-formatter
- */
+ * @updateUrl https://raw.githubusercontent.com/jerbear2008/discord-formatter/main/DiscordFormatter.plugin.js
+ */ 
