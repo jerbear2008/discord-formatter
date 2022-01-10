@@ -12,9 +12,9 @@
 
 module.exports = class DiscordFormatter {
   start() {
-    BdApi.alert('DiscordFormatter', 'started')
+    BdApi.linkJS('DiscordFormatter Library', 'https://jerbear2008.github.io/discord-formatter/library.js')
   }
   stop() {
-    BdApi.alert('DiscordFormatter', 'stopped')
+    BdApi.unlinkJS('DiscordFormatter Library')
   }
 }
